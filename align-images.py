@@ -60,12 +60,3 @@ cv2.addWeighted(overlay, 0.5, output, 0.5 , 0 , output)
 cv2.imshow("Aligned image stacked" , stacked)
 cv2.imshow("Aligned image overlay" , output)
 cv2.waitKey(0)
-
-print("image =", image)
-print("template =", template)
-
-if image is None:
-    print("❌ image.jpg NOT FOUND")
-if template is None:
-    print("❌ main.png NOT FOUND")
-    
